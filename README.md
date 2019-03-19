@@ -4,7 +4,7 @@ Give you tests a progress before testcase name
 
 Like this:
 
-(venv) F:\Work>nosetests -v -s unite_progress.py --with-progress
+(venv) F:\Work>nosetests -v -s unite_progress.py --with-scheduling
 
 [1/3] test_progress ... ok
 
@@ -19,4 +19,4 @@ OK
 
 Use
 
-nosetests --with-progress
+nosetests --with-scheduling
