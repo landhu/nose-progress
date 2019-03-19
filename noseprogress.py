@@ -1,4 +1,4 @@
-"""Print progress to stdout. Enabled by --with-progress"""
+"""Print progress to stdout. Enabled by --with-scheduling"""
 
 from functools import partial
 import itertools
@@ -8,12 +8,12 @@ import sys
 
 from nose.plugins import Plugin
 
-log = logging.getLogger('nose.plugins.noseprogress')
+log = logging.getLogger('nose.plugins.nosescheduling')
 
 
 class Progress(Plugin):
-    name = 'progress'
-    _handler_prefix = 'nose_progress_'
+    name = 'scheduling'
+    _handler_prefix = 'nosescheduling_'
     encoding = "UTF-8"
     _totalTests = 0
 
